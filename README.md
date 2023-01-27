@@ -13,3 +13,4 @@
 [code of prime or composite number](all_tasks/prime_or_composite.py)
 - Программа загадывает число от 0 до 1000. Необходимо угадать число за 10 попыток. Программа должна
 подсказывать “больше” или “меньше” после каждой попытки.
+[code of game like as a binary search](all_tasks/binary_search.py)
