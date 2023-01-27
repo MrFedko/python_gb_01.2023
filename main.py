@@ -5,6 +5,7 @@ if __name__ == "__main__":
     any_triangle = Triangle(a, b, c)
 
     try:
-        print(any_triangle)
+        print(any_triangle, any_triangle.type, sep='\n')
     except AttributeError:
         print("Попробуйте ещё раз")
+

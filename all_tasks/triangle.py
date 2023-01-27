@@ -1,9 +1,11 @@
 class Triangle:
     def __init__(self, a: float, b: float, c: float):
+
         if Triangle.validate(a, b, c):
             self.a: float = a
             self.b: float = b
             self.c: float = c
+            self.__type = None
         else:
             print("Такого треугольника не существует")
 
@@ -41,3 +43,13 @@ class Triangle:
 
     def __str__(self):
         return f"Треугольник со сторонами {self.a}, {self.b}, {self.c}"
+
+    @property
+    def type(self):
+        if self.__type is None:
+            count = 0
+            for i in self.__dict__.values():
+                temp = list(self.__dict__.values()).count(i)
+                count = temp if count < temp else count
+            self.__type = ["Разносторонний", "Равнобедренный", "Равносторонний"][count - 1]
+        return self.__type
