@@ -2,6 +2,7 @@ from all_tasks.triangle import Triangle
 from all_tasks.prime_or_composite import is_prime
 from all_tasks.binary_search import search
 from all_tasks.circle import Circle
+from all_tasks.negative_discr import negative
 
 if __name__ == "__main__":
     # Triangle
@@ -26,3 +27,7 @@ if __name__ == "__main__":
     number: (float) = float(input("Введите диаметр круга: "))
     krug = Circle(number)
     print(f"Длинна окружности = {krug.circle_long:.42f} \nПлощадь круга = {krug.area:.42f}")
+
+    #negative discrim
+    result = negative(*[complex(i) for i in input("Введите a, b, c через пробел: ").split()])
+    print(f"D = {result[0]} \nx1 = {result[1]} \nx2 = {result[2]}")
