@@ -2,9 +2,6 @@ from math import pi
 import decimal
 
 
-decimal.getcontext().prec = 42
-
-
 class Circle:
     def __init__(self, diameter: float):
         self.diameter: float = diameter
