@@ -34,4 +34,6 @@ if __name__ == "__main__":
     print(f"D = {result[0]} \nx1 = {result[1]} \nx2 = {result[2]}")
 
     # int to hex
-    print(f'hex of number = {hex_number(int(input("Введите число: ")))}')
+    number = int(input("Введите число: "))
+    print(f'''hex of number = {hex_number(number)}
+test with hex() = {hex(number)}''')
