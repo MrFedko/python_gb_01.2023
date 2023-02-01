@@ -1,10 +1,10 @@
-from all_tasks.triangle import Triangle
-from all_tasks.prime_or_composite import is_prime
-from all_tasks.binary_search import search
-from all_tasks.circle import Circle
-from all_tasks.negative_discr import negative
-from all_tasks.hex_number import hex_number
-from all_tasks.fractions_from_user import UserFractions
+from all_tasks.first.triangle import Triangle
+from all_tasks.first.prime_or_composite import is_prime
+from all_tasks.first.binary_search import search
+from all_tasks.second.circle import Circle
+from all_tasks.second.negative_discr import negative
+from all_tasks.second.hex_number import hex_number
+from all_tasks.second.fractions_from_user import UserFractions
 
 if __name__ == "__main__":
     # Triangle
