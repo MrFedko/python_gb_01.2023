@@ -4,6 +4,7 @@ from all_tasks.binary_search import search
 from all_tasks.circle import Circle
 from all_tasks.negative_discr import negative
 from all_tasks.hex_number import hex_number
+from all_tasks.fractions_from_user import UserFractions
 
 if __name__ == "__main__":
     # Triangle
@@ -37,3 +38,12 @@ if __name__ == "__main__":
     number = int(input("Введите число: "))
     print(f'''hex of number = {hex_number(number)}
 test with hex() = {hex(number)}''')
+
+    # fractions from user
+    fraction_1, fraction_2 = [UserFractions(*[int(j) for j in i.split("/")])
+                              for i in input("Введите две дроби формата a/b через пробел: ").split()]
+
+    print(f"""Вы ввели дроби {fraction_1} и {fraction_2}
+{fraction_1} + {fraction_2} = {fraction_1 + fraction_2}
+{fraction_1} * {fraction_2} = {fraction_1 * fraction_2}""")
+
