@@ -4,6 +4,7 @@ from type_dict import get_type_dict
 from double_count import double_count
 from odd_index import odd_index
 from nums_of_words import num_of_words
+from chr_dict import chr_dict
 
 if __name__ == "__main__":
     # get uniq numbers
@@ -31,3 +32,7 @@ if __name__ == "__main__":
            "get Unicode strings into your program, and how do you convert Unicode into a form suitable for storage " \
            "or transmission?"
     num_of_words(text)
+
+    # get dict of chars
+    text = "Once you’ve written some code that works with Unicode data, the next problem is input/output. How do you"
+    [print(f"{key}: {value}") for key, value in chr_dict(text).items()]
