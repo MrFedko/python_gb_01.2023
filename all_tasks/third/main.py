@@ -3,6 +3,7 @@ from string_from_user import reformat
 from type_dict import get_type_dict
 from double_count import double_count
 from odd_index import odd_index
+from nums_of_words import num_of_words
 
 if __name__ == "__main__":
     # get uniq numbers
@@ -24,3 +25,9 @@ if __name__ == "__main__":
     #         1  2  3  4  5  6  7  8   9
     my_lst = [2, 4, 6, 8, 3, 5, 7, 10, 5]
     print(odd_index(my_lst))
+
+    # printing text
+    text = "Once you’ve written some code that works with Unicode data, the next problem is input/output. How do you " \
+           "get Unicode strings into your program, and how do you convert Unicode into a form suitable for storage " \
+           "or transmission?"
+    num_of_words(text)
