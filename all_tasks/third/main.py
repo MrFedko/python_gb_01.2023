@@ -7,6 +7,7 @@ from nums_of_words import num_of_words
 from chr_dict import chr_dict
 from only_double import only_double
 from ten_most_popular import ten_popular
+from backpack import backpack
 
 if __name__ == "__main__":
     # get uniq numbers
@@ -73,3 +74,8 @@ if __name__ == "__main__":
            "языков программирования с показателем 15,74%. «Языком года» по версии TIOBE Python объявлялся в 2007, " \
            "2010, 2018, 2020 и 2021 годах."
     print(ten_popular(text))
+
+    # backpack
+    shop = {"носки": 1, "штаны": 3, "футболка": 2, "футболка_2": 2, "куртка": 5, "кепка": 1}
+    backpack_size = 7
+    [print(i) for i in backpack(shop, backpack_size)]
