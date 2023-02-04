@@ -5,6 +5,7 @@ from double_count import double_count
 from odd_index import odd_index
 from nums_of_words import num_of_words
 from chr_dict import chr_dict
+from only_double import only_double
 
 if __name__ == "__main__":
     # get uniq numbers
@@ -36,3 +37,7 @@ if __name__ == "__main__":
     # get dict of chars
     text = "Once you’ve written some code that works with Unicode data, the next problem is input/output. How do you"
     [print(f"{key}: {value}") for key, value in chr_dict(text).items()]
+
+    # return only elements with count() > 1
+    my_list = [2, 4, 6, 8, 3, 5, 7, 10, 5]
+    print(only_double(my_list))
