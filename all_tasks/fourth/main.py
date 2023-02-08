@@ -1,6 +1,7 @@
 from uni_code import uni_code
 from dict_char_num import dict_char_num
 from bubble_sort import bubble_sort
+from premium import premium
 
 
 if __name__ == "__main__":
@@ -19,3 +20,9 @@ if __name__ == "__main__":
     # bubble sort
     numbers = [1, 3, 5, 7, 2, 8, 10, 142, 23, 45, 6, 3, 2, 5]
     print(bubble_sort(numbers))
+
+    # return dict with premium
+    names = ["John", "Bill", "Liz"]
+    cash = [123, 321, 432]
+    percent = ["10.25%", "55.05%", "33.75%"]
+    print(premium(names, cash, percent))
