@@ -1,2 +1,2 @@
 def uni_code(text: str) -> list[int]:
-    return sorted(set([ord(i) for i in text]), reverse=True)
+    return sorted([ord(i) for i in set(text)], reverse=True)
