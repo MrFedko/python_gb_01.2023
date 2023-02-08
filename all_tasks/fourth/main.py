@@ -1,5 +1,6 @@
 from uni_code import uni_code
 from dict_char_num import dict_char_num
+from bubble_sort import bubble_sort
 
 
 if __name__ == "__main__":
@@ -14,3 +15,7 @@ if __name__ == "__main__":
 
     # dict with chars and nums
     print(dict_char_num(input("введите два числа через пробел: ")))
+
+    # bubble sort
+    numbers = [1, 3, 5, 7, 2, 8, 10, 142, 23, 45, 6, 3, 2, 5]
+    print(bubble_sort(numbers))
