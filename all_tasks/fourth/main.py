@@ -2,6 +2,7 @@ from uni_code import uni_code
 from dict_char_num import dict_char_num
 from bubble_sort import bubble_sort
 from premium import premium
+from list_sum import list_sum
 
 
 if __name__ == "__main__":
@@ -26,3 +27,8 @@ if __name__ == "__main__":
     cash = [123, 321, 432]
     percent = ["10.25%", "55.05%", "33.75%"]
     print(premium(names, cash, percent))
+
+    # return sum list between 2 indexes
+    start = -6
+    end = 25
+    print(list_sum(numbers, start, end))
