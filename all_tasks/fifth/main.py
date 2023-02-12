@@ -2,6 +2,7 @@ from dict_with_int import dict_with_int
 from dict_chr_ord import dict_chr_ord
 from fizz_buzz import fizz_buzz
 from product_table import product_table
+from prime_gen import prime_gen
 
 if __name__ == "__main__":
     # dict with int
@@ -28,3 +29,7 @@ if __name__ == "__main__":
     print("*" * 50)
 
     product_table()
+
+    print("*" * 50)
+
+    [print(i) for i in prime_gen(int(input("Сколько простых чисел вывести? ")))]
