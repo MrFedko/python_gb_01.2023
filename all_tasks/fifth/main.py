@@ -1,6 +1,7 @@
 from dict_with_int import dict_with_int
 from dict_chr_ord import dict_chr_ord
 from fizz_buzz import fizz_buzz
+from product_table import product_table
 
 if __name__ == "__main__":
     # dict with int
@@ -23,3 +24,7 @@ if __name__ == "__main__":
     print("*" * 50)
 
     print(*fizz_buzz())
+
+    print("*" * 50)
+
+    product_table()
