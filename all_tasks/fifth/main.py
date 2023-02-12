@@ -9,3 +9,13 @@ if __name__ == "__main__":
 
     text = "Это текст для тестирования функции, где ключ - символ, а значение - его код."
     print(dict_chr_ord(text))
+
+    print("*" * 50)
+
+    my_dict = iter(dict_chr_ord(text).items())
+    [print(next(my_dict)) for _ in range(5)]
+
+    print("*" * 50)
+
+    print([i for i in range(0, 101, 2) if i // 10 + i % 10 != 8])
+
