@@ -4,7 +4,8 @@ from fizz_buzz import fizz_buzz
 from product_table import product_table
 from prime_gen import prime_gen
 from file_path import file_info
-from ..fourth.premium import premium
+from premium import premium
+from fibo import fibo
 
 if __name__ == "__main__":
     # dict with int
@@ -34,7 +35,7 @@ if __name__ == "__main__":
 
     print("*" * 50)
 
-    [print(i) for i in prime_gen(int(input("Сколько простых чисел вывести? ")))]
+    [print(i, end=" ") for i in prime_gen(int(input("Сколько простых чисел вывести? ")))]
 
     print("*" * 50)
 
@@ -48,3 +49,8 @@ if __name__ == "__main__":
     cash = [123, 321, 432]
     percent = ["10.25%", "55.05%", "33.75%"]
     print(premium(names, cash, percent))
+
+    print("*" * 50)
+
+    # fibo nums
+    [print(i, end=" ") for i in fibo(int(input("Сколько чисел Фибоначчи вывести на экран? ")))]
