@@ -1,4 +1,5 @@
 from datetime import datetime
+from sys import argv
 
 
 def date_validate(date_text: str) -> bool:
@@ -15,3 +16,7 @@ def _leap_info(date_text: str) -> bool:
         return True
     else:
         return False
+
+
+if __name__ == '__main__':
+    date_validate(argv[2])
