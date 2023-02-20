@@ -4,6 +4,7 @@ from name_gen import name_gen
 from from_two_files import from_two_files
 from make_files import make_files
 from new_make_files import new_make_file
+from group_rename import group_rename
 
 if __name__ == '__main__':
     fill_numbers(20, 'numbers.txt')
@@ -20,3 +21,5 @@ if __name__ == '__main__':
     }
 
     new_make_file(data)
+
+    group_rename(4, 'bin', 'zip', [2, 4], "new")

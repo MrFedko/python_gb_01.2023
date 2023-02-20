@@ -2,11 +2,14 @@ from pathlib import Path
 from typing import TextIO
 
 
-def read_or_begin(fd: TextIO) -> str:
+__all__ = ['from_two_files']
+
+
+def _read_or_begin(fd: TextIO) -> str:
     line = fd.readline()
     if line == '':
         fd.seek(0)
-        return read_or_begin(fd)
+        return _read_or_begin(fd)
     return line[:-1]
 
 
@@ -19,8 +22,8 @@ def from_two_files(numbers: Path, strings: Path, result: Path) -> None:
         len_str = sum(1 for _ in f_str)
         len_num = sum(1 for _ in f_num)
         for _ in range(max(len_str, len_num)):
-            name = read_or_begin(f_str)
-            two_num = read_or_begin(f_num)
+            name = _read_or_begin(f_str)
+            two_num = _read_or_begin(f_num)
             num_i, num_f = two_num.split('|')
             mult = int(num_i) * float(num_f)
             if mult < 0:
