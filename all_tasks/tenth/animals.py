@@ -26,6 +26,9 @@ class Animal:
     def animal_type(self, animal_type: str):
         self._animal_type = animal_type
 
+    def __str__(self):
+        return  str(self.__dict__)
+
 
 class Cat(Animal):
     def __init__(self, wild: bool, *args):
