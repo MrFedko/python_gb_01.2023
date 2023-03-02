@@ -1,5 +1,7 @@
 from typing import Callable
 from random import randint
+from counter_wrap import counter_wrap
+from to_json_wrap import to_json_wrapper
 
 
 def binary_search_game_wrap(func) -> Callable[[], None]:
@@ -14,7 +16,9 @@ def binary_search_game_wrap(func) -> Callable[[], None]:
     return wrapper
 
 
+@to_json_wrapper
 @binary_search_game_wrap
+@counter_wrap(3)
 def game(num: int, count: int):
     for i in range(1, count + 1):
         print(f"Попытка номер {i} ")
