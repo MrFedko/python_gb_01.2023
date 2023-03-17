@@ -466,3 +466,4 @@
     - имя функции
     - аргументы вызова
     - результат
+  [code](all_tasks/final/new_logging_wrapper.py)
