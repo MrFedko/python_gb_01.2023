@@ -1,7 +1,8 @@
 import logging
 
-
-logging.basicConfig(level=logging.ERROR, filename='ZeroDivisionError.log', encoding='utf-8')
+FORMAT = '{asctime} {levelname} {funcName}->{lineno}: {msg}'
+logging.basicConfig(level=logging.ERROR, filename='ZeroDivisionError.log', encoding='utf-8',
+                    format=FORMAT, style="{")
 logger = logging.getLogger(__name__)
 
 
