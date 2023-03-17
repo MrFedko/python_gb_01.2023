@@ -449,3 +449,12 @@
        - pytest.
       
     [code](all_tasks/testing/my_func.py)
+
+
+##  15. Обзор стандартной библиотеки Python
+
+- Напишите программу, которая использует модуль logging для вывода сообщений об ошибке в файл.
+[code](all_tasks/final/logging_error.py)
+
+
+- 
